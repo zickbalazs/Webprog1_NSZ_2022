@@ -1,0 +1,35 @@
+table{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:auto;
+    width: 25%;
+    
+}
+#_1, #_2, #_3, #_4, #_5{
+    background-color: darkgray;
+    color:white;
+    text-shadow: 0 0 10px slategray;
+} 
+#_6{
+    background-color: red;
+    color:white;
+}
+td{
+    border: 1px solid black;
+    padding:10px;
+}
+
+td:nth-of-type(2){
+    transition: padding 0.3s ease-out;
+}
+td:nth-of-type(2):hover{
+    padding:20px;
+    
+}
+#_0{
+    background-color: green;
+    color:white;
+}
+#athuzas{
+    background: linear-gradient(to top right, #fff calc(50% - 1px), black , #fff calc(50% + 1px) )
+}
