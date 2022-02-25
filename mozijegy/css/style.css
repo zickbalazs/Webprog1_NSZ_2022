@@ -1,0 +1,71 @@
+div#Eredmenyek{
+	width: 40%;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: justify;
+	background-color: slategray;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding:10px;
+	color:white;
+	text-shadow: 0 0 2px black;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: auto;
+
+}
+div#szinhazterem
+	{
+		max-width         :  75%           ;
+		margin            :  0 auto          ;	
+	}
+	span.helyar
+	{
+		display           :  inline-block    ;
+		float             :  right           ;
+		margin            :  40px -24px 0 0  ;
+		width             :  128px           ;
+		height            :   60px           ;
+		line-height       :   60px           ;
+		background-color  :  #AAF            ;
+		text-align        :  center          ;
+		font-size         :  16px            ;
+		font-weight       :  bold            ;
+		transform         :  rotate(-90deg)  ;
+	}
+
+	span.sorszam
+	{
+		display           :  inline-block    ;
+		width             :  24px            ;
+		height            :  14px            ;
+		margin-right      :   8px            ;
+		text-align        :  right           ;
+	}
+
+	span.szek
+	{
+		display           :  inline-block    ;
+		margin            :  6px 2px         ;
+		width             :  14px            ;
+		height            :  14px            ;
+		border-radius     :   2px            ;
+		text-align        :  center          ;
+		line-height       :  14px            ;
+		font-size         :   9px            ;
+		color             :  #333            ;
+		cursor:pointer;
+	}
+
+	span.foglalt
+	{
+		border            :  solid 1px #844  ; 
+		background-color  :  #FAA            ;
+		color             :  #600            ;
+	}
+
+	span.szabad
+	{
+		border            :  solid 1px #484  ; 
+		background-color  :  #8D8            ;
+		color             :  #040            ;
+	}
