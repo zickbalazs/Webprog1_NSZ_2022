@@ -291,6 +291,6 @@ function GenDiv(roll_a, roll_b, roll_c, index){
 }
 function Create_A_Dice(number){
     let image = document.createElement('img');
-    image.src=`../img/${number}.PNG`;
+    image.src=`img/${number}.PNG`;
     return image;
 }
