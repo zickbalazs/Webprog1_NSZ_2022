@@ -94,7 +94,13 @@ function SameRoll(){
 function IsThereSameRoll(){
     for (let i = 1; i < 21; i++) {
         for (let g = 1; g < 21; g++) {
-            if (Check(i, g)) return true; 
+            if (Check(i, g))
+            {
+                console.log(i);
+                console.log(g);
+                return true; 
+            } 
+                
         }        
     }
     return false;
