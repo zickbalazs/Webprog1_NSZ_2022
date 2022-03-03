@@ -31,6 +31,6 @@ td{
     transition: background-color 0.1s;
 }
 td:hover{
-    background-color: red;
+    background-color: red!important;
     
 }
