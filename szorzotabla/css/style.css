@@ -1,0 +1,36 @@
+body{
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
+}
+.container{
+    width: 100%;
+}
+.inputs{
+    background-color: rgb(160, 123, 123);
+    text-align: center;
+}
+table{
+    margin:auto;
+    border:2px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(49, 172, 49);
+    cursor: crosshair;
+}
+td:nth-of-type(5n), tr:nth-of-type(5n)>td, tr:first-of-type>td, td:first-of-type{
+    background-color:rgb(26, 189, 26);
+}
+td{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: lightgreen;
+    transition: background-color 0.1s;
+}
+td:hover{
+    background-color: red;
+    
+}
