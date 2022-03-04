@@ -1,10 +1,27 @@
-const ELEMENTS = ['field', 'block', 'snekbody', 'snekhead', 'appel', 'golden-appel', 'green-appel'];
-
-
+const ELEMENTS = ['field', 'block', 'snekbody', 'snekhead', 'appel', 'golden-appel', 'green-appel'],
+      BUTTON = {
+          LEFT: 37,
+          RIGHT: 39,
+          UP: 38,
+          DOWN: 40,
+          W: 87,
+          A: 65,
+          S: 83,
+          D: 68
+      }
+      ,
+      DIR = {
+          UP: 0,
+          RIGHT: 1,
+          DOWN: 2,
+          LEFT: 3
+      };
 let buttons = document.getElementsByTagName('button'),
-startbt = document.querySelector('#startbt'),
-difficulty = 0,
-Game;
+    startbt = document.querySelector('#startbt'),
+    difficulty = 0,
+    table = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],
+    snek = [],
+    Game;
 
 //game variables
 let obstacle = 0,
@@ -18,14 +35,9 @@ function AddEventListeners(){
     }
 }
 
-
-
-
-
-
-
-
-
+function GenerateElement(index){
+    return ELEMENTS[index];
+}
 
 function ChangeColorDiff(button){
     button.classList.add('selected');
