@@ -42,13 +42,17 @@ function AddEventListeners(){
 function ChangeDir(keycode){
     switch (keycode){
         case DIR.UP: {
-            if (dir!=keycode)
+            if (dir!=2){
+                dir=0;
+            }
         }
         case DIR.DOWN : {}
         case DIR.LEFT : {}
         case DIR.RIGHT : {}
         case DIR.W: {
-            if (dir!=keycode)
+            if (dir!=2){
+                dir=0;
+            }
         }
         case DIR.S : {}
         case DIR.A : {}
