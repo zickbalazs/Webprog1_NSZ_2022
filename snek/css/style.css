@@ -20,8 +20,10 @@ body{
 }
 table{
     margin:auto;
-    background-color: honeydew;
+    background-color: lightblue;
     border:1px solid black;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 .menu{
     position: absolute;
@@ -34,6 +36,11 @@ table{
     color:white;
     background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s, opacity 0.5s;
+}
+td{
+    width: 20px;
+    height: 20px;
+    padding: 0;
 }
 button{
     background-color: rgba(79, 99, 82, 0.5 );
@@ -66,6 +73,28 @@ ul{
     padding: 0;
     margin: 0;
 }
-#text{
-
+#field{
+    background-color: lightblue;
+}
+#block{
+    background-color: rgb(58, 34, 8);
+}
+#snekbody{
+    background-color: green;
+    border: 1px solid black;
+}
+#snekhead{
+    background-color: lightgreen;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#appel{
+    background-color: rgb(172, 24, 24);
+    border-radius: 1px;
+}
+#golden-appel{
+    background-color: gold;
+}
+#green-appel{
+    background-color: green;
 }
