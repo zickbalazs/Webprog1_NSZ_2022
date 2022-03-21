@@ -81,7 +81,7 @@ function DrawTable(){
         for (let g = 0; g < 3; g++) {
             let td = document.createElement('td');
             let img = document.createElement('img');
-            img.src=`img/miceh-${g}-${i}.png`
+            img.src=`img/cheems-${g}-${i}.png`
             td.id=`i${g}${i}`
             td.appendChild(img);
             tr.appendChild(td);
