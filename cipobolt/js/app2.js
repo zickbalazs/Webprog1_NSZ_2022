@@ -3,7 +3,7 @@ let dates2Div = document.querySelector('.dates2'),
     N = GenerateSizes('N'),
     F = GenerateSizes('F');
 
-
+DrawSizes();
 function Results(){
 
 }
@@ -18,7 +18,7 @@ function DrawSizes(){
         text.innerText=F[g];
         divF.append(text);
     }
-    dates2Div.append(div);
+    dates2Div.append(divF, divN);
 }
 function GenerateSizes(nem){
     let sizeMin, diff, sizes = [];
@@ -34,5 +34,4 @@ function GenerateSizes(nem){
         sizes.push(sizeMin + Math.floor(Math.random()*diff) + 1)
     }
     return sizes;
-    
 }
