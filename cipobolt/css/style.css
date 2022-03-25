@@ -1,0 +1,19 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dates{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.dates div{
+    background-color: yellow;
+    text-align: center;
+    width: 50px;
+    border-radius: 10px;
+    padding:10px;
+}
+p{
+    color:darkblue;
+    font-weight: bold;
+}
