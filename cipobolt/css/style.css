@@ -17,3 +17,19 @@ p{
     color:darkblue;
     font-weight: bold;
 }
+#F, #N{
+    margin:15px;
+}
+#F>p, #N>p{
+    display:inline;
+    margin:5px; 
+    padding:5px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+#F>p{
+    background-color: pink;
+}
+#N>p{
+    background-color: lightblue;
+}
