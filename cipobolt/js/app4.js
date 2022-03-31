@@ -8,10 +8,7 @@ DisplayData();
 DisplayRes();
 function DisplayRes(){
     ReslD.innerHTML="";
-    ReslD.append(MakeP(`a) ${Avg().toFixed(1)} az átlagos kosárérték`));
-    ReslD.append(MakeP(`b) ${Arany()}x a legnagyobb rendelési érték az átlagosnak`));
-    ReslD.append(Draga());
-    ReslD.append(MakeP(`c) ${Tobbek()}% vett több cipőt.`));
+    ReslD.append(MakeP(`a) ${Avg().toFixed(1)} az átlagos kosárérték`), MakeP(`b) ${Arany()}x a legnagyobb rendelési érték az átlagosnak`), Draga(), MakeP(`c) ${Tobbek()}% vett több cipőt.`));
 }
 function DisplayData(){ 
     Prices.forEach(a => {
