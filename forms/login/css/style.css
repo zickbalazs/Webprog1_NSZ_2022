@@ -38,6 +38,9 @@ button{
 #password, #passwordagain{
     width: 50%;
 }
+#username, #address, #email, #telephone{
+    width: 75%;
+}
 .bad{
     background-color: rgb(250, 120, 120);
 }
