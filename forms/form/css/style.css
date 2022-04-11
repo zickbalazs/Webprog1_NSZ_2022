@@ -1,0 +1,25 @@
+h1, footer{
+    text-align: center;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+}
+.container-fluid{
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:5px;
+    width: 90%;
+    background-color: white;
+}
+footer{
+    padding:5px;
+    margin-top: 10px;
+    background-color: gray;
+}
+textarea{
+    height: 200px !important;
+}
