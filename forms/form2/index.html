@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../addon/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../form/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Telefonok
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body" id="phones">
+                    <p id="count"></p>
+                    <script src="js/phonegetter.js"></script>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong>Űrlap</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <form>
+                        <select class="form-select mb-3" aria-label="Gyártó" id="Manufacturer">
+                            <option value="" disabled selected>Gyártó:</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Sony">Sony</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Huawei">Huawei</option>
+                            <option value="Nokia">Nokia</option>
+                          </select>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="Modell" name="Modell" placeholder="Modell">
+                            <label for="Modell">Modell:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="Memory" name="Memory" placeholder="Memória" min="0">
+                            <label for="Memory">Memória (Gb):</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="Camera" name="Camera" placeholder="Kamera" min="0" steps=".0">
+                            <label for="Camera">Kamera (MP):</label>
+                        </div>
+                        <h2>OS</h2>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="OS" id="ios" value="iOS" checked>
+                            <label class="form-check-label" for="ios">
+                              iOS
+                            </label>
+                          </div>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="OS" id="android" value="Android">
+                            <label class="form-check-label" for="android">
+                              Android
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="OS" id="other" value="Egyéb">
+                            <label class="form-check-label" for="other">
+                              Egyéb
+                            </label>
+                          </div>
+                          <h2>Szolgáltató</h2>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="Carrier" id="Telekom" value="Telekom" checked>
+                            <label class="form-check-label" for="Telekom">
+                              Telekom
+                            </label>
+                          </div>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="Carrier" id="Yettel" value="Yettel">
+                            <label class="form-check-label" for="Yettel">
+                              Yettel
+                            </label>
+                          </div>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="Carrier" id="Vodafone" value="Vodafone">
+                            <label class="form-check-label" for="Vodafone">
+                              Vodafone
+                            </label>
+                          </div>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="Carrier" id="Független" value="Független">
+                            <label class="form-check-label" for="Független">
+                              Független
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="Carrier" id="Egyéb" value="Egyéb">
+                            <label class="form-check-label" for="Egyéb">
+                              Egyéb
+                            </label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="Price" name="Price" placeholder="Ár:" min="0" step="1000">
+                            <label for="Price">Ár (Ft):</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leírás" id="Description" style="height: 200px"></textarea>
+                            <label for="Description">Leírás</label>
+                          </div>
+                          <input type="button" class="btn btn-outline-success" value="Submit" id="Submit">
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="../../addon/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
