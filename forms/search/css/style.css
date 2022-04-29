@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    margin-top:2px;
+    padding:25px;
+    background-color: slategray;
+    color:white;
+}
+.container{
+    background-color: rgb(196, 196, 196);
+}
+tbody{
+    background-color: #fff;
+}
+thead{
+    background-color: rgb(154, 190, 255);
+}
+footer{
+    text-align: center;
+    padding:25px;
+    margin-bottom:2px;
+    background-color: slategray;
+    
+}
