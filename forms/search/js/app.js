@@ -3,7 +3,7 @@ async function GetJSON(){
     let response = await fetch('js/MOCK_DATA.json');
     return await response.json();
 }
-document.querySelector('form').addEventListener('keypress', async (e)=>{
+document.querySelector('form').addEventListener('keydown', async (e)=>{
         Search();
         if (document.querySelector('input').value=="") DisplayEveryone();
 })
