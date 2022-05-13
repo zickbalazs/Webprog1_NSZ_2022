@@ -1,0 +1,13 @@
+header>div>div>div>img{
+    height:400px;
+    margin:auto;    
+}
+.carousel-item{
+    background-color: rgba(0, 0, 0, 0.342);
+}
+footer{
+    background-color: black;
+    color:white;
+    padding:20px;
+    text-align: center;
+}
