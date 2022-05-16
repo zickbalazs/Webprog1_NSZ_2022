@@ -19,19 +19,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" onclick="contentLoad('main.html', '')" href="#">Főoldal</a>
+                    <a class="nav-link active" id="main" aria-current="page" onclick="contentLoad('main.html', '');activeChange('#main');" href="#">Főoldal</a>
                   </li>
                   <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                           Dropdown button
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" onclick="contentLoad('dog.html', 'dog')" href="#">Kutyák</a></li>
-                          <li><a class="dropdown-item" onclick="contentLoad('cat.html', 'cat');" href="#">Macskák</a></li>
-                          <li><a class="dropdown-item" onclick="contentLoad('berb.html', 'bird')" href="#">Madarak</a></li>
+                          <li><a id="dog" class="dropdown-item" onclick="contentLoad('dog.html', 'dog');activeChange('#dog')" href="#">Kutyák</a></li>
+                          <li><a id="cat" class="dropdown-item" onclick="contentLoad('cat.html', 'cat');activeChange('#cat')" href="#">Macskák</a></li>
+                          <li><a id="bird" class="dropdown-item" onclick="contentLoad('berb.html', 'bird');activeChange('#bird')" href="#">Madarak</a></li>
                         </ul>
                   </li>
-                  <li class="nav-item"><a href="#" onclick="contentLoad('contacts.html')" class="nav-link">Kapcsolat</a></li>
+                  <li class="nav-item"><a id="contact" href="#" onclick="contentLoad('contacts.html');activeChange('#contact')" class="nav-link">Kapcsolat</a></li>
               </div>
             </div>
         </nav>
@@ -93,10 +93,14 @@
                         </section>
                         <section>
                             <h3>Hirdetések</h3>
+                            <p id="count"></p>
                             <hr>
                         </section>
-                        <section>
+                        <section id="info">
                             <h3>Információ</h3>
+                            <p></p>
+                            <p></p>
+                            <p></p>
                             <hr>
                         </section>
                     </div>
