@@ -1,0 +1,42 @@
+body{
+    background-color: slategray;
+}
+header, footer{
+    background-color: lightblue;
+    text-align: center;
+    padding:1rem;
+}
+#lore{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+#lore>p{
+    padding:0.2rem;
+}
+header{
+    margin-top: 2rem;
+}
+main{
+    background-color: #fff;
+}
+p, h1{
+    margin: 0;
+}
+#Game{
+    display:none;
+}
+#Start{
+    display:block;
+}
+.tile{
+    height: 100px;
+    width: 100px;
+    border:2px solid black;
+    border-radius:10px;
+    margin:0.5rem;
+    cursor:pointer;
+}
+#Tiles{
+    margin-bottom:1rem;
+}
