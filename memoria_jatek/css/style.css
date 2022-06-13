@@ -36,6 +36,13 @@ p, h1{
     border-radius:10px;
     margin:0.5rem;
     cursor:pointer;
+    transition:transform 0.5s;
+}
+.tile>img{
+    display:inline-flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
 }
 #Tiles{
     margin-bottom:1rem;
